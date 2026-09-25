@@ -58,7 +58,8 @@ export default function Landing() {
             </p>
           ) : null}
           <a
-            href="/api/auth/google"
+            // href="/api/auth/google"
+            href="https://chatrpd.onrender.com/api/auth/google"
             className="mt-8 inline-flex items-center gap-3 rounded-xl bg-white px-5 py-3 text-sm font-semibold text-zinc-900 shadow-lg ring-1 ring-zinc-200 transition hover:bg-zinc-50 dark:bg-zinc-900 dark:text-white dark:ring-zinc-700"
           >
             <svg viewBox="0 0 24 24" className="h-5 w-5" aria-hidden="true">
