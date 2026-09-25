@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-zinc-50 text-zinc-900 antialiased dark:bg-zinc-950 dark:text-zinc-100;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(161 161 170 / 0.5) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(161 161 170 / 0.45);
+  border-radius: 999px;
+}
+
+.markdown-body p {
+  @apply mb-3 last:mb-0 leading-relaxed;
+}
+
+.markdown-body pre {
+  @apply mb-3 overflow-x-auto rounded-xl bg-zinc-900 p-4 text-sm text-zinc-100 dark:bg-zinc-800;
+}
+
+.markdown-body code {
+  @apply font-mono text-[0.9em];
+}
+
+.markdown-body :not(pre) > code {
+  @apply rounded bg-zinc-200 px-1.5 py-0.5 text-zinc-800 dark:bg-zinc-800 dark:text-zinc-200;
+}
+
+.markdown-body ul {
+  @apply mb-3 list-disc pl-5;
+}
+
+.markdown-body ol {
+  @apply mb-3 list-decimal pl-5;
+}
+
+.markdown-body a {
+  @apply text-brand-600 underline dark:text-indigo-400;
+}
